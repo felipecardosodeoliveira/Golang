@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Carga horária</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {{ range . }}
+                    <td>{{ .Nome }}</td>
+                    <td>{{ .CargaHoraria }}</td>
+                {{ end }}
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
