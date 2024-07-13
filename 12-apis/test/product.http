@@ -1,0 +1,26 @@
+# POST http://localhost:8000/products HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name": "My Product 3",
+#     "price": 1900.0
+# }
+
+# GET http://localhost:8000/products/273f0d4c-7ef8-4057-bd05-17f10217e225 HTTP/1.1
+# Content-Type: application/json
+
+# PUT http://localhost:8000/products/273f0d4c-7ef8-4057-bd05-17f10217e225 HTTP/1.1
+# Content-Type: application/json
+
+# {
+#     "name": "Notebook",
+#     "price": 5000.0
+# }
+
+# DELETE http://localhost:8000/products/e5841fad-0a4d-4420-b0ba-6cfe1294b5f3 HTTP/1.1
+
+GET http://localhost:8000/products?page=2&limit=1&sort=asc HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDA3NTgsInN1YiI6ImU1MmI0YjQyLTQ1YTUtNGQyYi04YTVhLTllZDBjMjZjZWRiZCJ9.98f9lWtid8gftQVYOnYWX2IqzYPlHodCybhzdIN94k8
+
+
+
