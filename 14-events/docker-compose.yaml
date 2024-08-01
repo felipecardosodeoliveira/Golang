@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.8.16-management
+    container_name: rabbitmq
+    hostname: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+      - "15692:15692"
+    environment:
+      - RABITMQ_DEFAULT_USER=guest
+      - RABITMQ_DEFAULT_PASS=guest
+      - RABITMQ_DEFAULT_VHOST=/
+
+      # docker rm -f $(docker ps -a -q)
+      
