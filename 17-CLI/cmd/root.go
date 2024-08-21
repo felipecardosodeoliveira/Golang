@@ -15,7 +15,7 @@ import (
 type RunEFunc func(cmd *cobra.Command, args []string) error
 
 func GetDB() *sql.DB {
-	db, err := sql.Open("sqlite3", "../data.db")
+	db, err := sql.Open("sqlite3", "./data.db")
 	if err != nil {
 		panic(err)
 	}

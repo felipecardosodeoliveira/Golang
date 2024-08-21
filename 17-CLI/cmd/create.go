@@ -9,16 +9,20 @@ import (
 )
 
 // createCmd represents the create command
-// var createCmd1 = &cobra.Command{
+// var createCmd = &cobra.Command{
 // Use:   "create",
 // Short: "A brief description of your command",
 // Long:  `A longer description that spans multiple`,
 // Run: func(cmd *cobra.Command, args []string) {
-// 	db := GetDB()
-// 	categoryDB := GetCategoryDB(db)
-// 	name, _ := cmd.Flags().GetString("name")
-// 	description, _ := cmd.Flags().GetString("description")
-// 	categoryDB.Create(name, description)
+// db := GetDB()
+// categoryDB := GetCategoryDB(db)
+// name, _ := cmd.Flags().GetString("name")
+// description, _ := cmd.Flags().GetString("description")
+// categpry, err := categoryDB.Create(name, description)
+// if err != nil {
+// panic(err)
+// }
+// fmt.Println(categpry)
 // },
 // RunE: createCategory(GetCategoryDB(GetDB())),
 // }
